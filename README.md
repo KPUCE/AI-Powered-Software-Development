@@ -10,8 +10,11 @@
   
 ### 서비스 기획단계
 * 서비스 기획단계에서 사용할 수 있는 프롬프트 예제 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/plan.md)
-* AI와 협업해서 만든 서비스 기획서 초안 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/serviceplan.md)
+* AI와 협업해서 만든 서비스 기획서 초안(GPT5) (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/serviceplan.md)
 * 개발자가 수정한 서비스 기획서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/FreediviglogPlan.md)
+
+#### AI가 생성한 제품 요구사항 정의서(PRD: Product Requirement Document)
+ * GPT5가 생성한 제품 요구사항 정의서 ()
 
    
 ## 참고문헌
