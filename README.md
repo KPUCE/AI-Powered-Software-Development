@@ -13,7 +13,7 @@
 *
 * AI와 협업해서 만든 서비스 기획서 초안(GPT5) (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/serviceplan.md)
 * AI와 협업해서 만든 서비스 기획서 초안(Gemini) ()
-* AI와 협업해서 만든 서비스 기획서 초안(Claude) ()
+* AI와 협업해서 만든 서비스 기획서 초안(Claude) (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/plan-Claude.md)
 * AI와 협업해서 만든 서비스 기획서 초안(Grok) ()
 * 
 * 개발자가 수정한 서비스 기획서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/FreediviglogPlan.md)
