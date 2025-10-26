@@ -9,8 +9,12 @@
 * Apple Watch Ultra를 사용하는 프리다이버를 위한 프라다이빙 전용 앱 개발
   
 ### 서비스 기획단계
-* 서비스 기획단계에서 사용할 수 있는 프롬프트 예제 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/plan.md)
+* 개발자가 서비스 기획단계에서 사용할 수 있는 프롬프트 예제 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/plan.md)
+*
 * AI와 협업해서 만든 서비스 기획서 초안(GPT5) (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/serviceplan.md)
+* AI와 협업해서 만든 서비스 기획서 초안(Gemini) ()
+* AI와 협업해서 만든 서비스 기획서 초안(Claude) ()
+* AI와 협업해서 만든 서비스 기획서 초안(Grok) ()
 * 
 * 개발자가 수정한 서비스 기획서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/FreediviglogPlan.md)
 
