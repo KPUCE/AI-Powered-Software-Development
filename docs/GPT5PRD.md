@@ -1,18 +1,14 @@
 # 🧭 Product Requirement Document (PRD)
-### Project: DEEPIN — Freedive Log & Training App  
+### Project: FreeDivingLog — Freedive Log & Training App  
 Version 1.0  
 Date: 2025-10-26  
-Author: 전광일  
-
 ---
 
 ## 1️⃣ 개요 (Overview)
 
 ### 🎯 제품 목적
-**DEEPIN**은 Apple Watch Ultra 2와 iPhone을 활용하여  
-프리다이버의 **실시간 다이빙 모니터링**, **안전 경고**, **로그 기록**, **훈련 관리**를 통합 제공하는 앱이다.  
-프리다이빙의 본질인 “한 번의 숨, 깊은 몰입”을 기술적으로 지원하고,  
-데이터 기반의 안전한 다이빙 문화를 확산시키는 것을 목표로 한다.
+**FreeDivingLog**는 Apple Watch Ultra 2와 iPhone을 활용하여 프리다이버의 **실시간 다이빙 모니터링**, **안전 경고**, **로그 기록**, **훈련 관리**를 통합 제공하는 앱이다.  
+프리다이빙의 본질인 “한 번의 숨, 깊은 몰입”을 기술적으로 지원하고, 데이터 기반의 안전한 다이빙 문화를 확산시키는 것을 목표로 한다.
 
 ---
 
