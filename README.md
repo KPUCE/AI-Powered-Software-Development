@@ -8,7 +8,7 @@
 ## 서비스 기획단계
 * 서비스 기획단계에서 사용할 수 있는 프롬프트 예제 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/plan.md)
 * AI와 협업해서 만든 서비스 기획서 초안 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/serviceplan.md)
-* 개발자가 수정한 서비스 기획서 ()
+* 개발자가 수정한 서비스 기획서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/FreediviglogPlan.md)
 
    
 ## 참고문헌
