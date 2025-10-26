@@ -15,6 +15,7 @@
 
 #### AI가 생성한 제품 요구사항 정의서(PRD: Product Requirement Document)
  * GPT5가 생성한 제품 요구사항 정의서 ()
+ * Google Gemini가 생성한 제품 요구사항 정의서 ()
 
    
 ## 참고문헌
