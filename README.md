@@ -14,7 +14,7 @@
 * 개발자가 수정한 서비스 기획서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/FreediviglogPlan.md)
 
 #### AI가 생성한 제품 요구사항 정의서(PRD: Product Requirement Document)
- * GPT5가 생성한 제품 요구사항 정의서 ()
+ * GPT5가 생성한 제품 요구사항 정의서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/GPT5PRD.md)
  * Google Gemini가 생성한 제품 요구사항 정의서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/geminiPRD.md)
  * Claude가 생성한 제품요구사항 정의서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/claudePRD.md)
 
