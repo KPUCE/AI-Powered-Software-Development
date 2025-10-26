@@ -1,5 +1,5 @@
 # AI-Powered-Software-Development
----
+-----
 ## AI를 활용한 소프트웨어 개발방법론
 * AI를 이용한 소프트웨어 개발방법에는 인간이 개발을 주도하고 AI를 보조수단으로 이용하는 **AI 활용 소프트웨어 개발(AI-Powered SW Development)**와 AI가 주도하고 인간이 확인,감수하는 **AI 주도 소프트웨어 개발(AI-Driven Software Development)**로 분류할 수 있으며, 다음과 같은 특징을 가진다.
 
