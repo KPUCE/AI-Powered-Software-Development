@@ -24,7 +24,7 @@
  * Claude가 생성한 제품 요구사항 정의서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/claudePRD.md)
  * Grok이 생성한 제품 요구사항 정의서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/grokPRD.md)
  * 
- * 개발자가 수정한 제품 요구사항 정의서 ()
+ * 개발자가 수정한 제품 요구사항 정의서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/FreeDivingLogPRD.md)
 
    
 ## 참고문헌
