@@ -47,7 +47,56 @@ graph TD
 
 ## DB 설계
 
+```mermaid
+erDiagram
+    USERS ||--o{ SESSIONS : "owns"
+    USERS ||--o{ SETTINGS : "has"
+    USERS ||--o{ BUDDIES : "initiates"
+    USERS }|--|| BUDDIES : "as buddy"
+    SESSIONS ||--o{ DIVES : "contains"
+    BUDDIES }o--o{ SESSIONS : "shares (via JSONB)"
 
+    USERS {
+        UUID id PK
+        VARCHAR email
+        VARCHAR name
+        TIMESTAMP created_at
+    }
+    SESSIONS {
+        UUID id PK
+        UUID user_id FK
+        DATE date
+        JSONB location
+        INTERVAL total_time
+    }
+    DIVES {
+        UUID id PK
+        UUID session_id FK
+        DECIMAL depth
+        INTEGER duration
+        DECIMAL ascent_speed
+    }
+    SETTINGS {
+        UUID id PK
+        UUID user_id FK
+        DECIMAL alert_depth
+        INTEGER recovery_time
+    }
+    BUDDIES {
+        UUID id PK
+        UUID user_id FK
+        UUID buddy_user_id FK
+        JSONB shared_sessions
+    }
+```
+
+#### 추가 고려사항
+- **마이그레이션**: Alembic나 Flyway로 스키마 버전 관리.
+- **보안**: RLS(Row-Level Security)로 사용자별 데이터 격리 (Apple 정책 준수).
+- **성능 튜닝**: TimescaleDB 확장으로 시계열 로그 최적화 (분석 쿼리 <1s).
+- **테스트**: 성공지표(로그 8회/주) 기반 부하 테스트.
+
+이 설계는 PRD의 모든 데이터 요구를 커버하며, 프로토타입 시 Supabase로 무료 시작 추천. 더 세부(뷰/트리거) 필요 시 말씀해주세요!
 ### 1. User Table (사용자 정보)
 
 | 필드명 | 데이터 타입 | 제약 조건 | 설명 |
