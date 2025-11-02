@@ -52,7 +52,7 @@ erDiagram
     ANALYSIS_RESULT {
         uuid analysis_id PK
         uuid session_id FK
-        string type  // ex: “recovery_efficiency”
+        string type  
         jsonb metrics
         timestamp created_at
     }
