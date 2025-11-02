@@ -186,3 +186,7 @@ graph TB
     classDef dataStyle fill:#FF9500,stroke:#C93400,stroke-width:2px,color:#fff
     classDef aiStyle fill:#AF52DE,stroke:#8E44AD,stroke-width:2px,color:#fff
 
+## UI 설계
+(https://claude.ai/public/artifacts/7a108596-7064-4223-8863-69c0472c09ba)
+
+## DB 설계
