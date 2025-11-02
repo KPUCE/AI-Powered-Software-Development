@@ -31,7 +31,7 @@
 
 이 구조는 **오프라인 우선 설계**로 네트워크 없이도 Watch와 iPhone이 독립적으로 동작하며, Backend는 선택적 확장 기능을 제공합니다.
 
-'''mermaid
+```mermaid
 
 graph TB
     subgraph WATCH["⌚ Apple Watch Ultra 2 - watchOS"]
