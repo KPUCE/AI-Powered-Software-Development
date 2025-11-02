@@ -28,6 +28,8 @@
 
 #### AI가 생성한 제품 시스템 설계서
  * 개발자가 서비스 기획단계에서 사용할 수 있는 프롬프트 예제 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/systemdesign-prompt.md)
+ * 
+ * Claude가 생성한 제품시스템설계서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/claudesystemdesign.md)
    
 ## 참고문헌
    * 최지호 저, 클로드코드 완벽가이드, 골든래빗, 2025. 9
