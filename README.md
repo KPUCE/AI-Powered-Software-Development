@@ -39,6 +39,8 @@
  * gpt5가 생성한 시스템 설계서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/gptDBdesign.md)
  * Claude가 생성한 시스템설계서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/claudesystemdesign.md)
    * UI 설계서 (https://claude.ai/public/artifacts/7a108596-7064-4223-8863-69c0472c09ba)
+ * Grok이 생성한 시스템 설계서 () 
+ 
  * 개발자가 수정한 시스템 설계서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/FreeDivingLog_%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%84%A4%EA%B3%84%EB%8F%84_v1.pdf)
    
 ## 참고문헌
