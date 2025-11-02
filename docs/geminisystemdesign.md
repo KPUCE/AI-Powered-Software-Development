@@ -1,5 +1,7 @@
 ## 시스템 설계도
 
+```mermaid
+
 graph TD
     subgraph Apple Watch Ultra 2 (DIVE CLIENT & SENSOR HUB)
         A[F2. Dive Session Auto Detect] --> B(F3/F4. Real-time Monitoring & Safety Alert Engine);
@@ -35,3 +37,5 @@ graph TD
     style K fill:#ddd,stroke:#333
     style L fill:#eee,stroke:#333
     style M fill:#fee,stroke:#333
+
+```
