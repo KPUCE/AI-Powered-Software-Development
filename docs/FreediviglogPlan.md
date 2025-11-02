@@ -18,7 +18,7 @@ fun freediver를 위하여 다이빙 중 실시간 모니터링 기능에 부가
 
 ### 🎯 목표 사용자
 - Fun Diver가 주요 대상(프리다이빙 입문 ~ 중급 레벨 다이버)  
-- Apple Watch Ultra를 보유한 다이버  
+- Apple Watch Ultra를 보유한 다이버
 
 ---
 
