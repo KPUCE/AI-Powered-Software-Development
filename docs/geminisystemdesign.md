@@ -105,7 +105,7 @@ erDiagram
 
 프리다이버의 PB와 현재 세션 통계를 보여주는 시작 화면입니다.
 
-
+https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/Gemini_Generated_Image_6w7of26w7of26w7o.png
 
 ---
 
