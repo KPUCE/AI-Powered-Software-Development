@@ -113,7 +113,7 @@ https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/Gemini_G
 
 다이빙 중 실시간 수심, 시간, 안전 경고를 표시하는 화면입니다.
 
-
+https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/Gemini_Generated_Image_6w7of26w7of26w7o%20(1).png
 
 ---
 
@@ -121,4 +121,4 @@ https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/Gemini_G
 
 수면 복귀 후 회복 시간 관리 및 직전 다이브 기록을 보여주는 화면입니다.
 
-
+https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/Gemini_Generated_Image_6w7of26w7of26w7o%20(2).png
