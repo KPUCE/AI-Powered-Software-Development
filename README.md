@@ -33,7 +33,7 @@
 
 ## 2.2 시스템 설계 단계
 
-#### AI가 생성한 제품 시스템 설계서
+#### AI가 생성한 제품 시스템 설계서(시스템설계도, UI 설계, DB 설계)
  * 개발자가 서비스 기획단계에서 사용할 수 있는 프롬프트 예제 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/systemdesign-prompt.md)
  * 
  * gpt5가 생성한 시스템 설계서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/gptDBdesign.md)
