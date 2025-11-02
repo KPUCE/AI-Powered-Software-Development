@@ -32,4 +32,47 @@ graph TD
         direction TB
         BM1["iCloud Sync Engine\n(CKRecord, File Sync)"]
         BM2["iCloud Backup\n(Auto Backup/Restore)"]
-        BM3계
+        BM3["iCloud Sharing\n(Private Share Links)"]
+    end
+
+    %% === 데이터 흐름 ===
+    WM1 --> WM2
+    WM2 --> WM3
+    WM3 --> WM4
+    WM3 --> WM5
+    WM3 --> WM6
+    WM6 --> WM7
+    WM7 <-->|"BLE / Background Sync\n(<10s on connect)"| IM1
+
+    IM1 --> IM2
+    IM2 --> IM3
+    IM3 --> IM5
+    IM3 --> IM4
+    IM4 --> IM5
+    IM6 <--> IM1
+    IM7 --> IM8
+    IM8 <--> BM1
+    BM1 <--> BM2
+    BM1 <--> BM3
+
+    %% 양방향 설정 동기화
+    IM6 <-->|"iCloud Key-Value"| BM1
+
+    %% HealthKit 공유 (옵션)
+    WM1 -.->|Heart Rate| HK[HealthKit]
+    IM3 -.->|"Workout Sync"| HK
+
+    %% 스타일
+    classDef watch fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#000
+    classDef phone fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#000
+    classDef cloud fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
+    classDef external fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+
+    class WM1,WM2,WM3,WM4,WM5,WM6,WM7 watch
+    class IM1,IM2,IM3,IM4,IM5,IM6,IM7,IM8 phone
+    class BM1,BM2,BM3 cloud
+    class HK external
+```
+
+---
+
