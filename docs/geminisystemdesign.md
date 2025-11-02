@@ -3,7 +3,7 @@
 ```mermaid
 
 graph TD
-    subgraph Apple Watch Ultra 2 (DIVE CLIENT & SENSOR HUB)
+    subgraph "Apple Watch Ultra 2 (DIVE CLIENT & SENSOR HUB)"
         A[F2. Dive Session Auto Detect] --> B(F3/F4. Real-time Monitoring & Safety Alert Engine);
         D[Watch Sensors: Depth, Time, CoreMotion, GPS] --> A;
         D --> B;
