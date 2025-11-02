@@ -190,6 +190,8 @@ graph TB
 
 ## DB 설계
 
+```mermaid
+
 erDiagram
     USERS ||--o{ DIVE_SESSIONS : creates
     USERS ||--o{ USER_SETTINGS : has
