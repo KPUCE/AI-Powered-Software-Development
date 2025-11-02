@@ -2,6 +2,10 @@
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/5a36081f-4a75-46ef-a4db-c793a49ebedf" />
 
+## UI 설계
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/a17b0b5d-39bd-4425-89f1-851d700d4e99" />
+
 ## DB 설계
 
 ```mermaid
@@ -68,8 +72,4 @@ erDiagram
         date created_at
         boolean accepted
     }
-
-## UI 설계
-
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/a17b0b5d-39bd-4425-89f1-851d700d4e99" />
 
