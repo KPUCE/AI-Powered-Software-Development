@@ -5,6 +5,11 @@
   
 * [AI를 활용한 소프트웨어 개발방법론] (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/AI%EB%A5%BC%ED%99%9C%EC%9A%A9%ED%95%9C%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C%EB%B0%A9%EB%B2%95%EB%A1%A0(%EC%A0%84%EA%B4%91%EC%9D%BC20250929).pdf)
 
+### AI의 특징
+* AI는 아주 그럴듯한 결과를 매우 빠른 시간안에 생성해준다.
+* AI는 모른다고 하지 않으며, 환각현상(hallucination)을 자주 발생한다.
+* AI는 디테일(detail)에 약하다.
+  
 ## AI를 활용한 소프트웨어 개발 예제: 프리다이버를 위한 전용 앱(FreeDivingLog)
 * Apple Watch Ultra를 사용하는 초중급 프리다이버를 위한 프라다이빙 전용 앱 개발
   
