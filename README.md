@@ -31,6 +31,8 @@
  * 
  * 개발자가 수정한 제품 요구사항 정의서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/FreeDivingLogPRD.md)
 
+## 시스템 설계 단계
+
 #### AI가 생성한 제품 시스템 설계서
  * 개발자가 서비스 기획단계에서 사용할 수 있는 프롬프트 예제 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/systemdesign-prompt.md)
  * 
