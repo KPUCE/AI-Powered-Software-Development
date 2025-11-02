@@ -1,5 +1,7 @@
 ## 시스템 설계도
 
+```mermaid
+
 graph TD
 
     %% Apple Watch
