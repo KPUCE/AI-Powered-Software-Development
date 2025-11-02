@@ -37,6 +37,7 @@
  * 개발자가 서비스 기획단계에서 사용할 수 있는 프롬프트 예제 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/systemdesign-prompt.md)
  * 
  * gpt5가 생성한 시스템 설계서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/gptDBdesign.md)
+ * Gemini가 생성한 시스템 설계서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/geminisystemdesign.md)
  * Claude가 생성한 시스템설계서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/claudesystemdesign.md)
    * UI 설계서 (https://claude.ai/public/artifacts/7a108596-7064-4223-8863-69c0472c09ba)
  * Grok이 생성한 시스템 설계서 () 
