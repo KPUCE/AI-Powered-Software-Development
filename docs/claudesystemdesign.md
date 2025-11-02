@@ -186,3 +186,236 @@ graph TB
     classDef dataStyle fill:#FF9500,stroke:#C93400,stroke-width:2px,color:#fff
     classDef aiStyle fill:#AF52DE,stroke:#8E44AD,stroke-width:2px,color:#fff
 
+```
+
+## DB 설계
+
+erDiagram
+    USERS ||--o{ DIVE_SESSIONS : creates
+    USERS ||--o{ USER_SETTINGS : has
+    USERS ||--o{ BUDDIES : "from"
+    USERS ||--o{ BUDDIES : "to"
+    USERS ||--o{ DIVE_SPOTS : creates
+    USERS ||--o{ SPOT_REVIEWS : writes
+    USERS ||--o{ CHALLENGE_PARTICIPANTS : participates
+    USERS ||--o{ USER_ACHIEVEMENTS : earns
+    USERS ||--o{ AI_TRAINING_RECOMMENDATIONS : receives
+    
+    DIVE_SESSIONS ||--|{ DIVE_LOGS : contains
+    DIVE_SESSIONS ||--o| SESSION_STATS : has
+    DIVE_SESSIONS ||--o| SESSION_LOCATIONS : "performed at"
+    
+    DIVE_SPOTS ||--o{ SPOT_REVIEWS : has
+    DIVE_SPOTS ||--o{ SESSION_LOCATIONS : "visited in"
+    
+    CHALLENGES ||--o{ CHALLENGE_PARTICIPANTS : has
+    
+    USERS {
+        uuid user_id PK "Primary Key"
+        string apple_id UK "Apple Sign-In Unique"
+        string email UK "Email Unique"
+        string username "Display Name"
+        string full_name
+        date birth_date
+        string certification_level "Beginner/Advanced/Instructor"
+        timestamp created_at
+        timestamp updated_at
+        timestamp last_login
+        boolean is_active "Account Status"
+        string profile_image_url "S3 URL"
+    }
+    
+    USER_SETTINGS {
+        uuid setting_id PK
+        uuid user_id FK "Foreign Key to USERS"
+        float target_depth_m "목표 깊이 (m)"
+        int recovery_time_sec "권장 회복 시간 (초)"
+        float ascent_speed_threshold "상승속도 경고 임계값 (m/s)"
+        boolean haptic_enabled "햅틱 피드백 ON/OFF"
+        boolean sound_enabled "소리 알림 ON/OFF"
+        string depth_unit "METER or FEET"
+        string temperature_unit "CELSIUS or FAHRENHEIT"
+        string language "ko or en"
+        json notification_preferences "알림 상세 설정"
+        timestamp updated_at
+    }
+    
+    DIVE_SESSIONS {
+        uuid session_id PK
+        uuid user_id FK "Foreign Key to USERS"
+        date session_date "세션 날짜"
+        time start_time "시작 시간"
+        time end_time "종료 시간"
+        int total_dives "세션 내 다이브 횟수"
+        float max_depth_m "세션 최대 수심"
+        int total_dive_time_sec "총 잠수 시간"
+        float avg_depth_m "평균 수심"
+        float water_temp_celsius "수온"
+        string session_type "TRAINING/COMPETITION/RECREATIONAL"
+        text notes "메모"
+        string weather_condition "날씨"
+        string watch_device_id "Apple Watch 식별자"
+        timestamp synced_at "iPhone 동기화 시각"
+        timestamp created_at
+        timestamp updated_at
+    }
+    
+    DIVE_LOGS {
+        uuid log_id PK
+        uuid session_id FK "Foreign Key to DIVE_SESSIONS"
+        int dive_number "세션 내 다이브 순서 (1,2,3...)"
+        timestamp dive_start "다이브 시작 시각"
+        timestamp dive_end "다이브 종료 시각"
+        float max_depth_m "최대 수심"
+        int dive_duration_sec "잠수 시간 (초)"
+        int surface_interval_sec "수면 휴식 시간 (초)"
+        float avg_descent_speed "평균 하강 속도 (m/s)"
+        float avg_ascent_speed "평균 상승 속도 (m/s)"
+        float max_ascent_speed "최대 상승 속도"
+        int heart_rate_avg "평균 심박수 (bpm)"
+        int heart_rate_max "최대 심박수 (bpm)"
+        jsonb depth_time_series "시간별 수심 데이터 [{time, depth}]"
+        boolean alert_triggered "경고 발생 여부"
+        text alert_details "경고 상세 내용"
+        timestamp created_at
+    }
+    
+    SESSION_STATS {
+        uuid stat_id PK
+        uuid session_id FK "Foreign Key to DIVE_SESSIONS (1:1)"
+        float total_bottom_time_sec "총 바닥 시간"
+        float avg_surface_interval_sec "평균 수면 휴식 시간"
+        int personal_best_count "PB 갱신 횟수"
+        float efficiency_score "효율성 점수 (0-100, AI 계산)"
+        float safety_score "안전 점수 (0-100, AI 계산)"
+        jsonb depth_distribution "깊이별 분포 히스토그램"
+        jsonb time_distribution "시간별 분포"
+        float recovery_ratio "회복 비율 (1:2.1)"
+        timestamp calculated_at
+    }
+    
+    SESSION_LOCATIONS {
+        uuid location_id PK
+        uuid session_id FK "Foreign Key to DIVE_SESSIONS (1:1)"
+        uuid spot_id FK "Foreign Key to DIVE_SPOTS (NULL 가능)"
+        float latitude "위도"
+        float longitude "경도"
+        string location_name "위치 이름"
+        string country "국가"
+        string region "지역"
+        timestamp created_at
+    }
+    
+    DIVE_SPOTS {
+        uuid spot_id PK
+        uuid created_by_user_id FK "Foreign Key to USERS"
+        string spot_name "스팟 이름"
+        text description "설명"
+        float latitude "위도"
+        float longitude "경도"
+        float max_depth_m "최대 수심"
+        float avg_visibility_m "평균 시야 거리"
+        string water_type "OCEAN/LAKE/POOL/CENOTE"
+        text access_info "접근 방법"
+        text facilities "편의시설"
+        float avg_rating "평균 평점 (1-5)"
+        int review_count "리뷰 개수"
+        jsonb photos "이미지 URL 배열 (S3)"
+        boolean is_verified "관리자 검증 여부"
+        timestamp created_at
+        timestamp updated_at
+    }
+    
+    SPOT_REVIEWS {
+        uuid review_id PK
+        uuid spot_id FK "Foreign Key to DIVE_SPOTS"
+        uuid user_id FK "Foreign Key to USERS"
+        int rating "평점 (1-5)"
+        text review_text "리뷰 내용"
+        float visibility_m "방문 당시 시야"
+        float water_temp_celsius "방문 당시 수온"
+        date visit_date "방문 날짜"
+        jsonb photos "사진 URL 배열 (S3)"
+        int helpful_count "도움됨 카운트"
+        timestamp created_at
+        timestamp updated_at
+    }
+    
+    BUDDIES {
+        uuid buddy_id PK
+        uuid user_id_from FK "요청한 사용자"
+        uuid user_id_to FK "수락한 사용자"
+        string status "PENDING/ACCEPTED/BLOCKED"
+        timestamp requested_at
+        timestamp accepted_at
+    }
+    
+    CHALLENGES {
+        uuid challenge_id PK
+        string challenge_name "챌린지 이름"
+        text description "설명"
+        string challenge_type "DEPTH/DURATION/FREQUENCY/STREAK"
+        jsonb challenge_criteria "도전 조건 JSON"
+        date start_date "시작일"
+        date end_date "종료일"
+        string difficulty "EASY/MEDIUM/HARD"
+        jsonb rewards "보상 정보"
+        boolean is_active "활성화 상태"
+        timestamp created_at
+    }
+    
+    CHALLENGE_PARTICIPANTS {
+        uuid participant_id PK
+        uuid challenge_id FK "Foreign Key to CHALLENGES"
+        uuid user_id FK "Foreign Key to USERS"
+        float progress_percentage "진행률 (0-100)"
+        boolean completed "완료 여부"
+        timestamp joined_at
+        timestamp completed_at
+        int rank "순위"
+    }
+    
+    USER_ACHIEVEMENTS {
+        uuid achievement_id PK
+        uuid user_id FK "Foreign Key to USERS"
+        string achievement_type "DEPTH_MILESTONE/DIVE_COUNT/STREAK"
+        string achievement_name "업적 이름"
+        text description "설명"
+        jsonb metadata "추가 데이터"
+        timestamp earned_at
+    }
+    
+    AI_TRAINING_RECOMMENDATIONS {
+        uuid recommendation_id PK
+        uuid user_id FK "Foreign Key to USERS"
+        string recommendation_type "DEPTH/BREATH_HOLD/RECOVERY/TECHNIQUE"
+        text recommendation_text "추천 내용"
+        jsonb training_plan "훈련 계획 JSON"
+        float confidence_score "신뢰도 점수 (0-1)"
+        jsonb data_basis "추천 근거 데이터"
+        boolean user_feedback "유용함(true)/아님(false)"
+        timestamp created_at
+        timestamp expires_at
+    }
+    
+    SYNC_LOGS {
+        uuid sync_id PK
+        uuid user_id FK "Foreign Key to USERS"
+        string device_type "WATCH/IPHONE"
+        string device_id "기기 식별자"
+        int records_synced "동기화된 레코드 수"
+        boolean success "성공 여부"
+        text error_message "에러 메시지"
+        timestamp sync_started_at
+        timestamp sync_completed_at
+    }
+    
+    PERSONAL_BESTS {
+        uuid pb_id PK
+        uuid user_id FK "Foreign Key to USERS"
+        string pb_type "MAX_DEPTH/MAX_TIME/MAX_STREAK"
+        float value "값 (수심: m, 시간: sec, 연속: count)"
+        uuid dive_log_id FK "해당 다이브 로그 ID"
+        timestamp achieved_at "달성 시각"
+        timestamp created_at
+    }
