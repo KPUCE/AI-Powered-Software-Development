@@ -152,34 +152,28 @@
 | PB-07 | Watch → iPhone 자동 동기화 (<10s) | Watch ↔ iPhone | 8 | **32시간** | WatchOS + iOS | WatchConnectivity |
 | PB-08 | iCloud 자동 백업/복원 | iPhone | 5 | **20시간** | iOS | iCloudKit |
 | **소계** | | | **18** | **72시간** | | |
-
 | **E3. 데이터 분석 & 시각화 (iPhone)** – **Should** |
 | PB-09 | 수심-시간 그래프 (Swift Charts) | iPhone | 8 | **32시간** | iOS | 확대/축소 + 터치 |
 | PB-10 | 세션 통계 카드 (max, avg, total) | iPhone | 5 | **20시간** | iOS | 카드 UI |
 | PB-11 | 주/월 트렌드 차트 | iPhone | 8 | **32시간** | iOS | 날짜 그룹화 |
 | **소계** | | | **21** | **84시간** | | |
-
 | **E4. AI 기반 인사이트** – **Could** |
 | PB-12 | AI 회복비율 기반 훈련 제안 | iPhone | 13 | **52시간** | iOS + ML | CoreML 모델 |
 | PB-13 | Dive Efficiency Score | iPhone | 13 | **52시간** | iOS + Backend | 심박 + 수심 통합 |
 | **소계** | | | **26** | **104시간** | | |
-
 | **E5. 커뮤니티 & 공유** – **Could** |
 | PB-14 | 버디 로그 공유 (iCloud) | iPhone | 8 | **32시간** | iOS | Private Share |
 | PB-15 | 다이브 스팟 지도 + 리뷰 | iPhone | 8 | **32시간** | iOS | MapKit |
 | **소계** | | | **16** | **64시간** | | |
-
 | **E6. 설정 & 현지화** – **Must** |
 | PB-16 | 언어 전환 (KR/EN) | Watch + iPhone | 5 | **20시간** | iOS | i18n + Localizable |
 | PB-17 | 단위 전환 (m/ft, °C/°F) | Watch + iPhone | 5 | **20시간** | WatchOS + iOS | 실시간 변환 |
 | PB-18 | 설정 iCloud 동기화 | Watch ↔ iPhone | 5 | **20시간** | iOS | Key-Value Store |
 | **소계** | | | **15** | **60시간** | | |
-
 | **E7. 백엔드 & 데이터 관리** – **Must** |
 | PB-19 | PostgreSQL 스키마 + API | Backend | 8 | **32시간** | Backend | users, sessions, dives |
 | PB-20 | PDF/CSV 내보내기 | iPhone | 5 | **20시간** | iOS | Share Sheet |
 | **소계** | | | **13** | **52시간** | | |
-
 | **E8. 배포 & 운영** – **Must** |
 | PB-21 | App Store 출시 | All | 5 | **20시간** | PM + QA | TestFlight → Release |
 | PB-22 | Crashlytics 모니터링 | All | 3 | **12시간** | Backend | Firebase |
