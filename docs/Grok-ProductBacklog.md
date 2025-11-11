@@ -147,7 +147,6 @@
 | PB-04 | 목표 깊이 도달 시 진동 | Watch | 3 | **12시간** | WatchOS | 설정 연동 |
 | PB-05 | 수면 회복 타이머 + 경고 | Watch | 5 | **20시간** | WatchOS | 타이머 + UI 피드백 |
 | **소계** | | | **26** | **104시간** | | |
-
 | **E2. 오프라인 로그 & 동기화** – **Must** |
 | PB-06 | Watch 오프라인 CoreData 저장 | Watch | 5 | **20시간** | WatchOS | App Group + 모델 |
 | PB-07 | Watch → iPhone 자동 동기화 (<10s) | Watch ↔ iPhone | 8 | **32시간** | WatchOS + iOS | WatchConnectivity |
