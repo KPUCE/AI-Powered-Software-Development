@@ -49,6 +49,7 @@
 ### 2.3.1 AI가 생성한 Product Backlog
  * GPT5가 생성한 Product Backlog (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/gpt5-ProductBacklog.md)
  * Gemini가 생성한 Product Backlog (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/Gemini-Productbacklog.md)
+ * Grok이 생성한 Product Backlog (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/Grok-ProductBacklog.md)
 
    
 ### 2.3.2 AI가 생성한 1차 Sprint Backlog
