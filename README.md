@@ -47,7 +47,7 @@
 ## 2.3 시스템 구현 단계
 
 ### 2.3.1 AI가 생성한 Product Backlog
- * GPT5가 생성한 Product Backlog ()
+ * GPT5가 생성한 Product Backlog (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/gpt5-ProductBacklog.md)
  * 
 ### 2.3.2 AI가 생성한 1차 Sprint Backlog
 
