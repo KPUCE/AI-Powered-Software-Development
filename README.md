@@ -43,6 +43,13 @@
  * Grok이 생성한 시스템 설계서 ((https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/groksystemdesign.md) 
  *
  * 개발자가 수정한 시스템 설계서 (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/FreeDivingLog_%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%84%A4%EA%B3%84%EB%8F%84_v1.pdf)
-   
+
+## 2.3 시스템 구현 단계
+
+### 2.3.1 AI가 생성한 Product Backlog
+
+### 2.3.2 AI가 생성한 1차 Sprint Backlog
+
+
 ## 참고문헌
    * 최지호 저, 클로드코드 완벽가이드, 골든래빗, 2025. 9
