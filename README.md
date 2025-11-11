@@ -52,7 +52,7 @@
  * Grok이 생성한 Product Backlog (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/Grok-ProductBacklog.md)
  * Claude가 생성한 Product Backlog (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/Claude-ProductBacklog.md)
    
-### 2.3.2 AI가 생성한 1차 Sprint Backlog
+### 2.3.2 AI가 생성한 Sprint Backlog
  * GPT5가 생성한 Sprint Backlog (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/GPT5-SprintBacklog.md)
  * Gemini가 생성한 Sprint Backlog (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/Gemini-SprintBacklog.md)
  * Grok이 생성한 Sprint Backlog (https://github.com/KPUCE/AI-Powered-Software-Development/blob/main/docs/Grok-Sprintbacklog.md)
