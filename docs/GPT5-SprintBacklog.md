@@ -144,7 +144,7 @@
 📌 **전체 프로젝트 예상 종료일 → 2026년 3월 26일**
 
 ---
-# User Story에서 Tsk로의 변환
+# User Story에서 Task로의 변환
 
 # ✅ **1. Apple Watch Ultra 2 — User Story → Task 변환**
 
@@ -465,14 +465,5 @@
 
 ---
 
----
 
-# ✅ 필요하시면 다음도 만들어드릴 수 있어요:
-
-✅ **Sprint별 Task 보드 (칸반 형태)**
-✅ **총 Task 수 & 인력 기준 소요 시간 자동 계산**
-✅ **JIRA Import용 CSV**
-✅ **Task 간 Dependency 맵(의존성 다이어그램)**
-
-원하시는 걸 알려주세요!
 
