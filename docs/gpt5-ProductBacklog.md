@@ -1,16 +1,3 @@
-좋아요. 이제 **FreeDivingLog 전체 시스템(Watch Ultra 2 + iPhone + Backend)** 을 대상으로
-Scrum Framework의 **Product Backlog** 형태로 정리해줄게요.
-
-✅ 원칙
-
-* **Epic → Feature → User Story** 형태
-* 각 User Story는 Scrum 형식인
-  **“As a [user], I want to [기능], so that I can [가치].”**
-* Acceptance Criteria(AC) 포함
-* 플랫폼(Watch / iPhone / Backend) 별 정리
-
----
-
 # ✅ **FreeDivingLog — Product Backlog (Scrum 기반)**
 
 *Epic → Feature → User Story → Acceptance Criteria*
